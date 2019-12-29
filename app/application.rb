@@ -5,4 +5,6 @@ class Application
     req = Rack::Request.new(env)
 
     if req.path=="/items/<ITEM NAME>"
+      resp.write "#{price}"
+    else
       resp.write 
